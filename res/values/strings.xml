@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TopStackOverflow</string>
+    
+    <string name="question_details_see_all_answers">See all answers (%d)</string>
+    
+</resources>

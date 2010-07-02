@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01" android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/textviewQuestionTitle" android:text="@+id/textviewQuestionTitle" style="@style/QuestionDetailsTitle" android:padding="5px"></TextView>
+		<View android:layout_width="fill_parent" android:background="#000" android:layout_height="2px"></View><include android:layout_height="wrap_content" layout="@layout/question_loading_next_page_row" android:layout_width="fill_parent" android:id="@+id/viewQuestionDetailsLoading"></include><LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/layoutQuestionDetialsLoaded" android:orientation="vertical" android:visibility="gone"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/layoutQuestionBody">
+
+</LinearLayout><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/layoutQuestionSelectedAnswer" android:visibility="gone"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selected answer:" android:padding="5px" android:paddingTop="15px" style="@style/QuestionDetailsTitle"></TextView><View android:layout_width="fill_parent" android:background="#000" android:layout_height="2px"></View>
+</LinearLayout><Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="See all answers ()" android:id="@+id/buttonQuestionDetailsSeeAllAnswers" android:visibility="gone"></Button></LinearLayout>
+		
+		
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

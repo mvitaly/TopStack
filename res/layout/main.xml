@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/org.topixoft.top_stack_overflow"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:padding="10px">
+	<ImageView android:id="@+id/ImageView01" android:src="@drawable/title"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_gravity="center" android:paddingBottom="10px"></ImageView>
+
+	<Button android:text="Questions" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/buttonQuestions"
+		android:layout_weight="1" style="@style/MainButton"></Button>
+	<Button android:text="Tags" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/buttonTags"
+		android:layout_weight="1" style="@style/MainButton"></Button>
+	<Button android:text="Users" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/buttonUsers"
+		android:layout_weight="1" style="@style/MainButton" android:textColor="#888"></Button>
+	<Button android:text="Badges" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/buttonBadges"
+		android:layout_weight="1" style="@style/MainButton" android:textColor="#888"></Button>
+
+	<!--com.innerActive.ads.InnerActiveAdView
+		android:id="@+id/ad1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		app:bgColor="#000000"
+		app:txtColor="#FFFFFF"
+		/-->
+
+
+</LinearLayout>

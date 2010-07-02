@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="com.innerActive.ads.InnerActiveAdView">
+		<attr name="refreshSlot" format="integer" />
+		<attr name="bgColor" format="color" />
+		<attr name="txtColor" format="color" />
+		<attr name="isNoAd" format="boolean" />
+	</declare-styleable>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/stackoverflow-java-sdk"/>
+	<classpathentry kind="lib" path="libs/admob-sdk-android.jar"/>
+	<classpathentry kind="lib" path="libs/innerActive-SDK-android-v206.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

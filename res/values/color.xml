@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="answers_color">#FFF</color><color name="answer_selected_color">#E1E818</color>
+<color name="answers_background_color">#75845C</color><color name="no_answer_background_color">#9A4444</color>
+
+
+</resources>

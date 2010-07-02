@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:padding="3px"
+			android:visibility="gone">
+
+			<EditText android:id="@+id/textviewSearch"
+				android:layout_height="fill_parent" android:hint="Quick search"
+				android:layout_width="wrap_content" android:layout_weight="1" />
+			<ImageButton android:id="@+id/imgbtnSearch"
+				android:layout_height="fill_parent" android:src="@android:drawable/ic_search_category_default"
+				android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:id="@+id/imgbtnSpeak"
+				android:layout_height="fill_parent" android:src="@android:drawable/ic_btn_speak_now"
+				android:layout_width="wrap_content"></ImageButton>
+
+
+		</LinearLayout>
+
+		<include android:id="@+id/include01" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" layout="@layout/tabs"></include>
+	</LinearLayout>
+</TabHost>
