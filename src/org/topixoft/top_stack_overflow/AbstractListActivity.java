@@ -1,6 +1,7 @@
 package org.topixoft.top_stack_overflow;
 
 import org.topixoft.top_stack_overflow.adapters.LoadingAdapter;
+import org.topixoft.top_stack_overflow.adapters.PagableListAdapter;
 
 import android.app.Activity;
 import android.os.Bundle;

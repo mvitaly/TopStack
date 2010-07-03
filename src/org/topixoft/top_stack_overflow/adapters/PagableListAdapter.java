@@ -1,7 +1,13 @@
-package org.topixoft.top_stack_overflow;
+package org.topixoft.top_stack_overflow.adapters;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.topixoft.top_stack_overflow.ItemsUpdater;
+import org.topixoft.top_stack_overflow.PagableSource;
+import org.topixoft.top_stack_overflow.R;
+import org.topixoft.top_stack_overflow.R.id;
+import org.topixoft.top_stack_overflow.R.layout;
 
 import android.app.Activity;
 import android.content.Context;

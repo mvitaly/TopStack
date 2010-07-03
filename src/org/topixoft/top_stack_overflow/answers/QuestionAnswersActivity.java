@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import org.topixoft.top_stack_overflow.AbstractListActivity;
 import org.topixoft.top_stack_overflow.R;
-import org.topixoft.top_stack_overflow.adapters.AnswersListAdapter;
 import org.topixoft.top_stack_overflow.questions.QuestionDetailsActivity;
 
 import android.content.Intent;

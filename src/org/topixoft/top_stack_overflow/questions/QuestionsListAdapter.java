@@ -1,9 +1,9 @@
-package org.topixoft.top_stack_overflow.adapters;
+package org.topixoft.top_stack_overflow.questions;
 
 import org.topixoft.top_stack_overflow.ItemsUpdater;
-import org.topixoft.top_stack_overflow.PagableListAdapter;
 import org.topixoft.top_stack_overflow.PagableSource;
 import org.topixoft.top_stack_overflow.R;
+import org.topixoft.top_stack_overflow.adapters.PagableListAdapter;
 
 import android.app.Activity;
 import android.content.res.Resources;

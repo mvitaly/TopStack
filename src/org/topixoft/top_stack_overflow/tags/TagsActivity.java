@@ -3,7 +3,6 @@ package org.topixoft.top_stack_overflow.tags;
 import org.topixoft.top_stack_overflow.AbstractListActivity;
 import org.topixoft.top_stack_overflow.ItemsUpdater;
 import org.topixoft.top_stack_overflow.R;
-import org.topixoft.top_stack_overflow.adapters.TagsListAdapter;
 import org.topixoft.top_stack_overflow.questions.QuestionsActivity;
 
 import android.content.Intent;

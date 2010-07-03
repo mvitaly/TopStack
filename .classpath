@@ -4,7 +4,6 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/stackoverflow-java-sdk"/>
-	<classpathentry kind="lib" path="libs/admob-sdk-android.jar"/>
-	<classpathentry kind="lib" path="libs/innerActive-SDK-android-v206.jar"/>
+	<classpathentry kind="lib" path="/stackoverflow-java-sdk/lib/gson-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

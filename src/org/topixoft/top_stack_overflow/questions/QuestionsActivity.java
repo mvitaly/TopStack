@@ -4,10 +4,9 @@ import java.io.Serializable;
 
 import org.topixoft.top_stack_overflow.AbstractListActivity;
 import org.topixoft.top_stack_overflow.ItemsUpdater;
-import org.topixoft.top_stack_overflow.PagableListAdapter;
 import org.topixoft.top_stack_overflow.PagableSource;
 import org.topixoft.top_stack_overflow.R;
-import org.topixoft.top_stack_overflow.adapters.QuestionsListAdapter;
+import org.topixoft.top_stack_overflow.adapters.PagableListAdapter;
 
 import android.content.Intent;
 import android.os.Bundle;
