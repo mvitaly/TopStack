@@ -1,7 +1,9 @@
 package org.topixoft.top_stack_overflow;
 
+import org.topixoft.top_stack_overflow.badges.BadgesTabsActivity;
 import org.topixoft.top_stack_overflow.questions.QuestionsTabsActivity;
 import org.topixoft.top_stack_overflow.tags.TagsTabsActivity;
+import org.topixoft.top_stack_overflow.users.UsersTabsActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -37,8 +39,10 @@ public class TopStackOverflowActivity extends Activity implements View.OnClickLi
 				intent = new Intent(this, TagsTabsActivity.class);
     			break;
     		case R.id.buttonUsers:
+    			intent = new Intent(this, UsersTabsActivity.class);
+    			break;
     		case R.id.buttonBadges:
-    			Toast.makeText(this, "Beta version!\nFeature still not available", Toast.LENGTH_LONG).show();
+    			intent = new Intent(this, BadgesTabsActivity.class);
     			break;
     		default:
     			return;

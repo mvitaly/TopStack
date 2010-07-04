@@ -1,7 +1,6 @@
-package org.topixoft.top_stack_overflow.tags;
+package org.topixoft.top_stack_overflow.users;
 
 import org.topixoft.top_stack_overflow.AbstractListActivity;
-import org.topixoft.top_stack_overflow.ItemsUpdater;
 import org.topixoft.top_stack_overflow.R;
 import org.topixoft.top_stack_overflow.questions.QuestionsActivity;
 
@@ -11,31 +10,32 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.google.code.stackexchange.schema.Tag;
+import com.google.code.stackexchange.schema.User;
 
-public class TagsActivity extends AbstractListActivity<Tag> implements AdapterView.OnItemClickListener {
+public class UsersActivity extends AbstractListActivity<User> implements AdapterView.OnItemClickListener {
 
-	public static final String TAGS_SOURCE_EXTRA = "tagsSource";
+	public static final String USERS_SOURCE_EXTRA = "usersSource";
 	
-	TagsSource source = null;
+	UsersSource source = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Bundle extras = getIntent().getExtras();
 		if (extras != null) {
-			source = (TagsSource) extras.get(TAGS_SOURCE_EXTRA);
+			source = (UsersSource) extras.get(USERS_SOURCE_EXTRA);
 		}
 		
 		super.onCreate(savedInstanceState);
 		
-		new TagsListAdapter(this, source, this);
+		new UsersListAdapter(this, source, this);
 	}
 	
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		Tag tag = (Tag) parent.getItemAtPosition(position);
+		User user = (User) parent.getItemAtPosition(position);
 	    Intent intent = new Intent().setClass(this, QuestionsActivity.class);
-	    intent.putExtra(QuestionsActivity.QUESTIONS_SOURCE_EXTRA, new QuestionsTagSortOrderSource(tag.getName()));
+	    intent.putExtra(QuestionsActivity.QUESTIONS_SOURCE_EXTRA, new QuestionsUserSortOrderSource(user.getUserId()));
 	    startActivity(intent);
 	}
 

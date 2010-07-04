@@ -18,16 +18,12 @@ public abstract class AbstractListActivity<I> extends Activity implements ItemsU
 	
 	protected PagableListAdapter<I> listAdapter;
 	
-	protected abstract int getContentViewId();
-	
-	protected abstract int getListViewId();
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(getContentViewId());
-		listView = (ListView) findViewById(getListViewId());
+		setContentView(R.layout.listview);
+		listView = (ListView) findViewById(R.id.listviewGeneric);
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,

@@ -19,6 +19,10 @@
 		<activity android:name=".answers.QuestionAnswersActivity"></activity>
 		<activity android:name=".tags.TagsTabsActivity"></activity>
 		<activity android:name=".tags.TagsActivity"></activity>
+		<activity android:name=".users.UsersTabsActivity"></activity>
+		<activity android:name=".users.UsersActivity"></activity>
+		<activity android:name=".badges.BadgesTabsActivity"></activity>
+		<activity android:name=".badges.BadgesActivity"></activity>
 		
 		<!-- The application's publisher ID assigned by AdMob -->
 		<meta-data android:value="a14c2a1fc661578" android:name="ADMOB_PUBLISHER_ID" />
@@ -29,6 +33,5 @@
 	<!-- Ads permissions -->
 	<uses-permission android:name="android.permission.INTERNET" />
 	<!--uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /-->
-	<uses-permission android:name="android.permission.CALL_PHONE" />
 	
 </manifest> 

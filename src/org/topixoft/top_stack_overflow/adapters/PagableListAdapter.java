@@ -27,8 +27,8 @@ public abstract class PagableListAdapter<I> extends BaseAdapter {
 	private PagableSource<I, ?> source;
 	private ItemsUpdater<I> itemsUpdater;
 	
-	int pageNumber = 1;
-	int pageSize = 10;
+	protected int pageNumber = 1;
+	protected int pageSize = 10;
 	
 	boolean showNextPageItem;
 	final List<I> items = new ArrayList<I>();
@@ -69,6 +69,9 @@ public abstract class PagableListAdapter<I> extends BaseAdapter {
 		return getItemIdInternal(getItem(position));
 	}
 
+	public void enrichItemsBeforeView(List<I> newItems) {
+	}
+	
 	public abstract View getViewInternal(int position, View convertView, ViewGroup parent);
 
 	public abstract String getItemsString();
@@ -109,6 +112,7 @@ public abstract class PagableListAdapter<I> extends BaseAdapter {
 			Log.d(TAG, "Retrieveing questions list");
 			try {
 				List<I> newItems = source.getItems(pageNumber, pageSize);
+				enrichItemsBeforeView(newItems);
 				items.addAll(newItems);
 				showNextPageItem = (newItems.size() == pageSize);
 				
@@ -125,5 +129,5 @@ public abstract class PagableListAdapter<I> extends BaseAdapter {
 			}
 		}
 	}
-	
+
 }

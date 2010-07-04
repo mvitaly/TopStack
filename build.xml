@@ -102,5 +102,11 @@
          build steps are used.
     -->
     <setup />
+	
+	<target name="compile" />
+
+	<target name="debug" />
+
+	<target name="help" />
 
 </project>

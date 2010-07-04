@@ -19,16 +19,6 @@ public class QuestionsActivity extends AbstractListActivity<Question> implements
 
 	public static final String QUESTIONS_SOURCE_EXTRA = "questionsSource";
 	
-	@Override
-	protected int getContentViewId() {
-		return R.layout.questions;
-	}
-	
-	@Override
-	protected int getListViewId() {
-		return R.id.listviewQuestions;
-	}
-	
 	@SuppressWarnings("unchecked")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

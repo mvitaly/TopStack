@@ -15,10 +15,10 @@
 		android:layout_weight="1" style="@style/MainButton"></Button>
 	<Button android:text="Users" android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonUsers"
-		android:layout_weight="1" style="@style/MainButton" android:textColor="#888"></Button>
+		android:layout_weight="1" style="@style/MainButton"></Button>
 	<Button android:text="Badges" android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonBadges"
-		android:layout_weight="1" style="@style/MainButton" android:textColor="#888"></Button>
+		android:layout_weight="1" style="@style/MainButton"></Button>
 
 	<!--com.innerActive.ads.InnerActiveAdView
 		android:id="@+id/ad1"

@@ -18,16 +18,6 @@ public class QuestionAnswersActivity extends AbstractListActivity<Answer> implem
 	public static final String ANSWERS_SOURCE_EXTRA = "answersSource";
 	
 	@Override
-	protected int getContentViewId() {
-		return R.layout.answers;
-	}
-	
-	@Override
-	protected int getListViewId() {
-		return R.id.listviewAnswers;
-	}
-	
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		AnswersSource source = null;
 		
