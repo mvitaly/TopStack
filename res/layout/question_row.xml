@@ -15,7 +15,7 @@
 				style="@style/Votes"></TextView>
 			<TextView android:id="@+id/TextView03" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
-				android:text="votes" style="@style/Votes.Label"></TextView>
+				style="@style/Votes.Label" android:text="@string/votes"></TextView>
 		</LinearLayout>
 	</LinearLayout>
 
@@ -31,7 +31,7 @@
 				style="@style/Answers"></TextView>
 			<TextView android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
-				android:text="answers" style="@style/Answers.Label" android:id="@+id/textviewAnswersLabel"></TextView>
+				style="@style/Answers.Label" android:id="@+id/textviewAnswersLabel" android:text="@string/answers"></TextView>
 		</LinearLayout>
 	</LinearLayout>
 
@@ -47,7 +47,7 @@
 				style="@style/Views"></TextView>
 			<TextView android:id="@+id/TextView07" android:layout_width="wrap_content"
 				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
-				android:text="views" style="@style/Views.Label"></TextView>
+				style="@style/Views.Label" android:text="@string/views"></TextView>
 		</LinearLayout>
 	</LinearLayout>
 
@@ -59,7 +59,7 @@
 			android:textColor="#07C" android:textStyle="bold"
 			android:layout_width="fill_parent" android:padding="3dip"
 			android:layout_weight="1"></TextView>
-		<HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/layoutTags"></LinearLayout></HorizontalScrollView>
+		<HorizontalScrollView android:layout_width="wrap_content" android:layout_height="wrap_content"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/layoutTags" android:padding="3px"></LinearLayout></HorizontalScrollView>
 		
 
 

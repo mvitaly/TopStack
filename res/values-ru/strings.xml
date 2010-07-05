@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="questions">Вопросы</string>
+    <string name="app_name">TopStack</string>
+    
+    <string name="question_details_see_all_answers">Все ответы (%d)</string>
+    
+</resources>

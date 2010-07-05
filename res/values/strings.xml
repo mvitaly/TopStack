@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TopStackOverflow</string>
+    <string name="views">views</string>
+    <string name="answers">answers</string>
+    <string name="votes">votes</string>
+    <string name="badges">Badges</string>
+    <string name="users">Users</string>
+    <string name="tags">Tags</string>
+    <string name="questions">Questions</string>
+    <string name="app_name">TopStack</string>
     
     <string name="question_details_see_all_answers">See all answers (%d)</string>
     

@@ -1,7 +1,9 @@
 package org.topixoft.top_stack_overflow.badges;
 
 import org.topixoft.top_stack_overflow.AbstractListActivity;
+import org.topixoft.top_stack_overflow.users.UsersActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,10 +31,10 @@ public class BadgesActivity extends AbstractListActivity<Badge> implements Adapt
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-//		Tag tag = (Tag) parent.getItemAtPosition(position);
-//	    Intent intent = new Intent().setClass(this, QuestionsActivity.class);
-//	    intent.putExtra(QuestionsActivity.QUESTIONS_SOURCE_EXTRA, new QuestionsTagSortOrderSource(tag.getName()));
-//	    startActivity(intent);
+		Badge badge = (Badge) parent.getItemAtPosition(position);
+	    Intent intent = new Intent().setClass(this, UsersActivity.class);
+	    intent.putExtra(UsersActivity.USERS_SOURCE_EXTRA, new UsersBadgeSortOrderSource(badge.getBadgeId()));
+	    startActivity(intent);
 	}
 
 }

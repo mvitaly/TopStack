@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:descendantFocusability="blocksDescendants" android:padding="5px" android:layout_height="fill_parent" android:id="@+id/layoutTagRow">
+	android:layout_width="fill_parent" android:descendantFocusability="blocksDescendants"
+	android:padding="5px" android:layout_height="fill_parent" android:id="@+id/layoutTagRow">
 
+	<TextView android:text="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/textviewTag"
+		android:padding="3px" style="@style/Tag" android:layout_gravity="center_vertical"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+		android:text="×" style="@style/TagLabel" android:paddingLeft="10px"
+		android:paddingRight="10px"></TextView>
+	<TextView android:text="@+id/TextView03" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+		android:id="@+id/textviewTagValue" style="@style/TagLabel"></TextView>
 	
-
-	
-
-	
-
-	
-
-
-
-
-<TextView android:text="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textviewTag" android:padding="3px" style="@style/Tag" android:layout_gravity="center_vertical"></TextView>
-<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="×" style="@style/TagLabel" android:paddingLeft="10px" android:paddingRight="10px"></TextView>
-<TextView android:text="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:id="@+id/textviewTagValue" style="@style/TagLabel"></TextView>
 </LinearLayout>

@@ -3,6 +3,7 @@ package org.topixoft.top_stack_overflow.questions;
 import java.util.EnumSet;
 import java.util.List;
 
+import org.topixoft.top_stack_overflow.HtmlBodyUtils;
 import org.topixoft.top_stack_overflow.R;
 import org.topixoft.top_stack_overflow.TopStackOverflowActivity;
 import org.topixoft.top_stack_overflow.answers.QuestionAnswersTabsActivity;
@@ -14,7 +15,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -94,7 +94,7 @@ public class QuestionDetailsActivity extends Activity implements View.OnClickLis
 		
 		WebView webviewQuestionBody = new WebView(this);
 		
-		String questionBodyHtml = getQuestionBodyHtml(question.getBody());
+		String questionBodyHtml = HtmlBodyUtils.getBodyHtml(question.getBody());
 		webviewQuestionBody.loadData(questionBodyHtml, "text/html", "utf-8");
 
 		layoutQuestionBody.addView(webviewQuestionBody,
@@ -107,7 +107,7 @@ public class QuestionDetailsActivity extends Activity implements View.OnClickLis
 			
 			WebView webviewQuestionAnswer = new WebView(this);
 			
-			String questionAnswerHtml = getQuestionBodyHtml(answer.getBody());
+			String questionAnswerHtml = HtmlBodyUtils.getBodyHtml(answer.getBody());
 			webviewQuestionAnswer.loadData(questionAnswerHtml, "text/html", "utf-8");
 			
 			layoutQuestionSelectedAnswer.addView(webviewQuestionAnswer,
@@ -122,22 +122,6 @@ public class QuestionDetailsActivity extends Activity implements View.OnClickLis
 		}
 	}
 	
-	private String getQuestionBodyHtml(String body) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(
-				"<html>\n" +
-				"<head>\n" +
-				"</head>\n" +
-				"</body>\n");
-		
-		sb.append(body);
-		
-		sb.append("\n" +
-				"</body>\n" +
-				"</html>\n");
-		return sb.toString();
-	}
-
 	public Question getQuestionWithSelectedAnswer(long questionId) {
 		StackExchangeApiClientFactory factory = StackExchangeApiClientFactory.newInstance(TopStackOverflowActivity.STACK_OVERFLOW_API_KEY);
 		StackExchangeApiClient client = factory.createStackOverflowApiClient();

@@ -64,8 +64,6 @@
     </style>
 
     <style name="Badge" parent="@android:style/TextAppearance.Small">
-        <item name="android:textColor">#3E6D8E</item>
-        <item name="android:background">#E0EAF1</item>
 	</style>
 	
 	<style name="BadgeLabel" parent="@android:style/TextAppearance.Medium">

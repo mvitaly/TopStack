@@ -5,9 +5,11 @@ import java.util.List;
 import org.topixoft.top_stack_overflow.PagableSource;
 import org.topixoft.top_stack_overflow.TopStackOverflowActivity;
 
+import com.google.code.stackexchange.client.query.BadgeApiQuery;
 import com.google.code.stackexchange.client.query.QuestionApiQuery;
 import com.google.code.stackexchange.client.query.SearchApiQuery;
 import com.google.code.stackexchange.client.query.StackExchangeApiQueryFactory;
+import com.google.code.stackexchange.schema.Badge;
 import com.google.code.stackexchange.schema.Paging;
 import com.google.code.stackexchange.schema.Question;
 
@@ -18,11 +20,15 @@ public abstract class QuestionsSource implements PagableSource<Question, Questio
 	public List<Question> getItems(int pageNumber, int pageSize) {
 		StackExchangeApiQueryFactory queryFactory = StackExchangeApiQueryFactory.newInstance(TopStackOverflowActivity.STACK_OVERFLOW_API_KEY);
 		QuestionApiQuery query = queryFactory.newQuestionApiQuery();
-	    final List<Question> questions = customizeQuery(query)
-	    		.withPaging(new Paging(pageNumber, pageSize))
-	    		.list();
+	    final List<Question> questions = getItems(
+	    		customizeQuery(query)
+	    		.withPaging(new Paging(pageNumber, pageSize)));
 	    
 	    return questions;
 	}
-
+	
+	protected List<Question> getItems(QuestionApiQuery query) {
+		return query.list();
+	}
+	
 }

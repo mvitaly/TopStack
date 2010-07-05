@@ -3,13 +3,21 @@ package org.topixoft.top_stack_overflow.answers;
 import java.io.Serializable;
 
 import org.topixoft.top_stack_overflow.AbstractListActivity;
+import org.topixoft.top_stack_overflow.HtmlBodyUtils;
 import org.topixoft.top_stack_overflow.R;
+import org.topixoft.top_stack_overflow.adapters.PagableListAdapter;
 import org.topixoft.top_stack_overflow.questions.QuestionDetailsActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewGroup.LayoutParams;
+import android.webkit.WebView;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 
 import com.google.code.stackexchange.schema.Answer;
 
@@ -34,9 +42,9 @@ public class QuestionAnswersActivity extends AbstractListActivity<Answer> implem
 	@Override
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
-		Intent intent = new Intent(QuestionAnswersActivity.this, QuestionDetailsActivity.class);
-		intent.putExtra(QuestionDetailsActivity.QUESTION_EXTRA, (Serializable) parent.getItemAtPosition(position));
-		startActivity(intent);
+//		Intent intent = new Intent(QuestionAnswersActivity.this, QuestionDetailsActivity.class);
+//		intent.putExtra(QuestionDetailsActivity.QUESTION_EXTRA, (Serializable) parent.getItemAtPosition(position));
+//		startActivity(intent);
 	}
-
+	
 }

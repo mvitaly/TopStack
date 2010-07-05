@@ -17,10 +17,15 @@ public abstract class UsersSource implements PagableSource<User, UserApiQuery> {
 	public List<User> getItems(int pageNumber, int pageSize) {
 		StackExchangeApiQueryFactory queryFactory = StackExchangeApiQueryFactory.newInstance(TopStackOverflowActivity.STACK_OVERFLOW_API_KEY);
 		UserApiQuery query = queryFactory.newUserApiQuery();
-	    final List<User> tags = customizeQuery(query)
-	    		.withPaging(new Paging(pageNumber, pageSize))
-	    		.list();
+	    final List<User> tags = getItems(
+	    		customizeQuery(query)
+	    		.withPaging(new Paging(pageNumber, pageSize)));
 	    
 	    return tags;
 	}
+
+	protected List<User> getItems(UserApiQuery query) {
+		return query.list();
+	}
+	
 }

@@ -6,8 +6,6 @@ import java.util.List;
 import org.topixoft.top_stack_overflow.ItemsUpdater;
 import org.topixoft.top_stack_overflow.PagableSource;
 import org.topixoft.top_stack_overflow.R;
-import org.topixoft.top_stack_overflow.R.id;
-import org.topixoft.top_stack_overflow.R.layout;
 
 import android.app.Activity;
 import android.content.Context;
@@ -114,8 +112,8 @@ public abstract class PagableListAdapter<I> extends BaseAdapter {
 				List<I> newItems = source.getItems(pageNumber, pageSize);
 				enrichItemsBeforeView(newItems);
 				items.addAll(newItems);
-				showNextPageItem = (newItems.size() == pageSize);
 				
+				showNextPageItem = (newItems.size() == pageSize);
 				pageNumber++;
 				
 				activity.runOnUiThread(new Runnable() {

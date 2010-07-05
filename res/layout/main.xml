@@ -7,18 +7,18 @@
 		android:layout_height="wrap_content" android:layout_width="wrap_content"
 		android:layout_gravity="center" android:paddingBottom="10px"></ImageView>
 
-	<Button android:text="Questions" android:layout_height="wrap_content"
+	<Button android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonQuestions"
-		android:layout_weight="1" style="@style/MainButton"></Button>
-	<Button android:text="Tags" android:layout_height="wrap_content"
+		android:layout_weight="1" style="@style/MainButton" android:text="@string/questions"></Button>
+	<Button android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonTags"
-		android:layout_weight="1" style="@style/MainButton"></Button>
-	<Button android:text="Users" android:layout_height="wrap_content"
+		android:layout_weight="1" style="@style/MainButton" android:text="@string/tags"></Button>
+	<Button android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonUsers"
-		android:layout_weight="1" style="@style/MainButton"></Button>
-	<Button android:text="Badges" android:layout_height="wrap_content"
+		android:layout_weight="1" style="@style/MainButton" android:text="@string/users"></Button>
+	<Button android:layout_height="wrap_content"
 		android:layout_width="fill_parent" android:id="@+id/buttonBadges"
-		android:layout_weight="1" style="@style/MainButton"></Button>
+		android:layout_weight="1" style="@style/MainButton" android:text="@string/badges"></Button>
 
 	<!--com.innerActive.ads.InnerActiveAdView
 		android:id="@+id/ad1"

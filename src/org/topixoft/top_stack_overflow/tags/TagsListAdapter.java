@@ -41,7 +41,7 @@ public class TagsListAdapter extends PagableListAdapter<Tag> {
 		TextView textviewTagValue = (TextView) view.findViewById(R.id.textviewTagValue);
 		
 		textviewTag.setText(tag.getName());
-		textviewTagValue.setText(beautifyAndStringify(tag.getCount()));
+		textviewTagValue.setText("" + tag.getCount());
 	}
 	
 	@Override
